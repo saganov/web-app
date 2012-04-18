@@ -57,19 +57,14 @@
     -->
     <script src="js/main.js"></script>
   </head>
-  <body>
-    <!-- The main problem with stand-alone mode is that, natively,
-         whenever users tap a link to move on to another page, they
-         will launch Mobile Safari in normal mode. The workaround here
-         is to handle all links with JavaScript and prevent the
-         default behavior.
-    <a href="http://www.apress.com/"
-       onclick="window.location.href=this.href; return false">Apress Web Site</a>
-      -->
-
+  <body onload="hideAds()">
     <div class="view">
       <div class="header-wrapper">
         <h1>Web App Header</h1>
+      </div>
+      <div class="ads">
+        <img src="img/gc-logo-brown.png" alt="Advertisement" width="320" height="50">
+        <div class="tab" onclick="reveal()">Apress sales. 20% off on all books.</div>
       </div>
       <div class="group-wrapper">
         <h2>iPhone</h2>

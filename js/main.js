@@ -30,6 +30,13 @@ function adjustHeight() {
     }, 0);
 }
 
+/*
+ * The main problem with stand-alone mode is that, natively,
+ * whenever users tap a link to move on to another page, they
+ * will launch Mobile Safari in normal mode. The workaround here
+ * is to handle all links with JavaScript and prevent the
+ * default behavior.
+ */
 function clickHandler(e) {
     var element = e.target;
     /* handle clicks only on anchor elements */
@@ -78,3 +85,16 @@ switch (window.orientation) {
 }
 
 
+function hideAds() {
+    setTimeout(hide, 5000);
+}
+function hide() {
+    var ads = document.querySelector(".ads");
+    ads.style.marginTop = (-ads.offsetHeight) + "px";
+}
+function reveal() {
+    console.log(reveal);
+    var ads = document.querySelector(".ads");
+    ads.style.marginTop = "";
+    hideAds();
+}

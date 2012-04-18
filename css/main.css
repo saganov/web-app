@@ -53,18 +53,15 @@ document views.
    -webkit-background-size: 100% 21px, 100% 22px;
    -webkit-box-sizing: border-box;
 }
-
 .header-wrapper h1 {
    text-align: center;
    font-size: 20px;
    line-height: 44px;
    margin: 0;
 }
-
 .group-wrapper {
    margin: 9px;
 }
-
 .group-wrapper h2 {
    color: #4c566c;
    font-size: 17px;
@@ -73,7 +70,6 @@ document views.
    text-shadow: #fff 0 1px 0;
    margin: 20px 10px 12px;
 }
-
 .group-wrapper p {
    background-color: #fff;
    -webkit-border-radius: 10px;
@@ -82,4 +78,32 @@ document views.
    margin: 9px 0 20px;
    border: solid 1px #a9abae;
    padding: 11px 9px 12px;
+}
+
+.ads {
+   z-index: -1;
+   position: relative;
+   -webkit-transition: margin-top 0.35s ease-out;
+   border-bottom: 0;
+   margin: 0 auto 34px;
+   width: 320px;
+}
+.ads img { display: block; }
+.ads .tab:before {
+   color: red;
+   content: 'AD ';
+}
+.ads .tab {
+   position: absolute;
+   background-image:-webkit-gradient(
+      linear, left top, left bottom,
+         from(black), to(#666));
+   color: white;
+   font: bold 11px/24px verdana;
+   height: 24px;
+   bottom: -24px;
+   left: 0;
+   width: 100%;
+   padding: 0 5px;
+   -webkit-box-sizing: border-box;
 }
