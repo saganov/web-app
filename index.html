@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Application Template</title>
+    <meta name="viewport" content="width=device-width;
+                                   initial-scale=1.0;
+                                   maximum-scale=1.0;
+                                   user-scalable=no">
+    <!-- Application icon 128px x 256px -->
+    <link rel="apple-touch-icon" href="img/custom-icon.png">
+    <link rel="apple-touch-icon-precompsed" href="img/custom-icon.png">
+    <!-- Running the application in Full-Screen mode
+         Do not forget: your application will not be running in Mobile
+         Safari or in a 'lite' version of it. It is a different mode,
+         which should be thoroughly tested to be sure nothing goes
+         wrong regarding display and behavior. Also, be sure to make a
+         clear and efficient navigation system available to the end
+         user, because none of the navigation options from the browser
+         will be at hand. 
+         When needed, you can check whether this mode is currently
+         enabled with JavaScript with the window.navigator.standalone
+         boolean
+      -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- The content attribute has three options available. Other than
+         default, you have a choice between black and
+         black-translucent. Remember that this option will work only
+         in full-screen mode. You cannot use it if the application
+         changes to full-screen after it has loaded. Again, this isn’t
+         possible on the iPad, neither in stand-alone mode nor for
+         native applications.
+      -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Splash screen
+         Your image should be 460 pixels high and 320 pixels wide
+         (portrait orientation). Do note that this height takes the
+         status bar height into account. If your image occupies the
+         whole span of the device screen, 20 pixels will be hidden
+         behind the platform interface
+      -->
+    <link rel="apple-touch-startup-image" href="img/startup-image.png">
+
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Note that on the iPad you can also target one orientation or
+    the other using CSS or the link tag with the media attribute.
+
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
+    
+    Or in a style tag or stylesheet
+    
+    <style>
+      @media all and (orientation:portrait) { /* Your style here */ }
+      @media all and (orientation:landscape) { /* Your style here */ }
+    </style>
+    -->
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- The main problem with stand-alone mode is that, natively,
+         whenever users tap a link to move on to another page, they
+         will launch Mobile Safari in normal mode. The workaround here
+         is to handle all links with JavaScript and prevent the
+         default behavior.
+    <a href="http://www.apress.com/"
+       onclick="window.location.href=this.href; return false">Apress Web Site</a>
+      -->
+
+    <div class="view">
+      <div class="header-wrapper">
+        <h1>Web App Header</h1>
+      </div>
+      <div class="group-wrapper">
+        <h2>iPhone</h2>
+        <p>Hello World!</p>
+      </div>
+    </div>
+  </body>
+</html>
